@@ -31,8 +31,7 @@ This challenge is based on emergency resource request analyzer that classifies t
 1. L Value :
 L represents the length of the username after removing spaces using replace().
 2. PLI Value (Personalized Logic Index) : 
-PLI(personalized logic index) is calculated using:
-  -PLI = L % 3
+PLI(personalized logic index) is calculated using : PLI = L % 3
 3. The modulo operator % is used to generate a personalized value.
 
 # Personalization rule explanation 
@@ -49,6 +48,18 @@ PLI(personalized logic index) is calculated using:
 6. Among the entered values, if same values are entered more than one time, then it shows that duplicate values are detected.
 7. Also, it displays the peak value from the entered request values.
 8. This ensures that the output are different for different users.
+
+# How it Works 
+This program takes the multiple requests values from the user and stores them in a list using pre allocation method. It reads the values from a loop. It categories the request into low,moderate, high, invalid requests and no demand using conditional statements.
+
+Next, it removes the spaces from the name entered if there are any spaces. And it calculates the L (length of name ) value . The PLI value is genrerated by using the modulo operator and doing with 3 ( % 3 ). Based on this PLI value, the total number of valid requests are counted and some specific categories are removed.
+
+Finally, the program checks whether it has duplicate values or not and also it displays the highest valid request value using max(). The ouputs are displayed before and after filtering.
+
+# How to Run 
+1. Open the file main.py
+2. Run the program in python
+3. Enter the details that has been asked and check the outputs before and after the personalization rules applied.
 
 # Learning outcomes
 Through this challenge, I have learned how to take user input and using the pre-allocation method. I also learned how to use loops and conditional statements and finding the duplicate values using sets. This also improved my understanding of indexing, slicing, handling the lists, string manipulation and using the built-in functions like replace(), len() and max(). Mainly, I have learned how to write a meaningful and logical program based on the conditions given.
